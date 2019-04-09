@@ -175,3 +175,27 @@ def twitchCheck(email):
     else:
         result = "Found"
         return result
+
+ # draft py for linkedIn email enumeration.
+
+ #  def linkedinCheck(email):
+ #   try:
+ #       driver.get("https://www.linkedin.com/checkpoint/rp/request-password-reset")
+ #   except WebDriverException:
+ #       result = "Site could not be reached, try again"
+ #       return result
+ #   try:
+ #       assert "Reset Password | LinkedIn" in driver.title
+ #   except AssertionError:
+ #       result = "Site could not be loaded properly, try again"
+ #       return result
+ #   sleep(1)
+ #   user = driver.find_element_by_name("userName")
+ #   user.send_keys(email)
+ #   driver.find_element_by_class_name("form__submit").click()
+ #   sleep(1)
+ #   if "Security Verification | LinkedIn" in driver.title:
+ #       result = "Found, Captcha encountered, you'll have to check this manually"
+ #       return result
+ #   else:
+ #       result = "Not Found"
