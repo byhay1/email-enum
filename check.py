@@ -38,6 +38,8 @@ def emailEnum(email, output):
     gooyou_response = sites.yougoogleCheck(email)
     print(excl + "Checking Twitch...")
     twitch_response = sites.twitchCheck(email) 
+  # print(excl + "Checking LinkedIn...")
+  # insta_response = sites.linkedinCheck(email)
     sites.quitSelenium()
     print("\n\n")
     results = pyfiglet.figlet_format("Results") 
@@ -48,9 +50,10 @@ def emailEnum(email, output):
     print(excl2 + "Facebook: " + face_response)
     print(excl2 + "Google/Youtube: " + gooyou_response)
     print(excl2 + "Twitch: " + twitch_response)
+  # print(exc12 + "LinkedIn: " + linkedin_response)
     if output is not None:
         outputfile = open(output, "a")
-        listout = ["Instagram: " + insta_response, "Twitter: " + twit_response, "Snapchat: " + snap_response, "Facebook: " + face_response, "Google/Youtube: " + gooyou_response, "Twitch: " + twitch_response]
+        listout = ["Instagram: " + insta_response, "Twitter: " + twit_response, "Snapchat: " + snap_response, "Facebook: " + face_response, "Google/Youtube: " + gooyou_response, "Twitch: " + twitch_response """, "LinkedIn: " + linkedin_response"""]
         outputfile.writelines((i + '\n' for i in listout))
         outputfile.close()
         sys.exit()
