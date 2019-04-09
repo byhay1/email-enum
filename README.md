@@ -1,3 +1,6 @@
+# Forked from Frint0; My Updates:  
+* Added LinkedIn email enumeration
+
 # Email-Enum
 [![Version](https://img.shields.io/badge/Version-v1.1-brightgreen.svg)](https://shields.io/)
 [![Status](https://img.shields.io/badge/Status-Stable-brightgreen.svg)](https://shields.io/)
